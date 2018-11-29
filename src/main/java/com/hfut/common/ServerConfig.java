@@ -1,5 +1,6 @@
 package com.hfut.common;
 
+import com.hfut.controller.IndexController;
 import com.jfinal.config.*;
 import com.jfinal.template.Engine;
 
@@ -11,7 +12,7 @@ public class ServerConfig extends JFinalConfig {
 
     @Override
     public void configRoute(Routes routes) {
-
+        routes.add("/", IndexController.class);
     }
 
     @Override
